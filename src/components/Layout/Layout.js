@@ -8,7 +8,7 @@ import { render } from '@testing-library/react';
 class Layout extends Component{
 
     state ={
-        showsidebar :false
+        showsidebar :true
     }
 sidebarclosedHandler= () =>{
     this.setState({showsidebar:false})
