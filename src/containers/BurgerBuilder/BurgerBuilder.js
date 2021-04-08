@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import {  useDispatch, useSelector } from 'react-redux';
 
-import Aux from '../../hoc/Aux/Aux';
+import Aux from '../../hoc/Aux';
 import Burger from '../../components/Burger/Burger';
-import BuildControls from '../../components/Burger/BuildControls/BuildControls';
+import BuildControls from '../../components/Burger/Buildcontrols/Buildcontrols';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import Spinner from '../../components/UI/Spinner/Spinner';
@@ -31,7 +31,7 @@ const BurgerBuilder = props => {
   const onIngredientRemoved = ingName =>
     dispatch(actions.removeIngredient(ingName));
   const onInitIngredients = useCallback(
-    () => dispatch(actions.initIngredients()),
+    () => dispatch(actions.initIngredient()),
     [dispatch]
   );
   const onInitPurchase = () => dispatch(actions.purchaseInit());
