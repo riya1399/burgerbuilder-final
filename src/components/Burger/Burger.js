@@ -53,7 +53,6 @@ import classes from './Burger.module.css';
 import Burgeringredient from '../Burger/Burgeringredient/Burgeringredient';
 // import {withRouter} from 'react-router-dom';
 const burger = (props) => {
-console.log(props);
 let transformedingredients = Object.keys(props.ingredients)
 .map(igkey=>{
 return [...Array(props.ingredients[igkey])].map((_,i)=>{
